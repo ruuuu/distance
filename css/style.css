@@ -1,0 +1,146 @@
+/*htmlreference.io — справочник на английском
+
+webref.ru — подробный справочник на русском 
+
+html5book.ru — справочник на русском 
+
+developer.mozilla.org/ru — сайт веб-документации*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.header{
+    background-color: #0050B3;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.header-block{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.search{/*сама встаила*/
+    display: flex;
+}
+
+.search-input{/*поле поиска*/
+    width: 100%;
+    max-width: 336px; /*/из макета */
+    flex-shrink: 0; /*нельзя сжиматься*/
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-top:5px ;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 30px;
+    background-image: url("../img/search.svg");/*не будте нажиматься как кнпока*/
+    background-repeat: no-repeat;
+    background-position: center right 12px; /*справа на 12 отходит и  по центру*/
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar{
+    margin-right: 8px;
+}
+
+.user-name{
+    color: #ffffff;
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+.navigation-panel{
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.navigation-link{/* a */
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: SF Pro Display;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    margin-left: 12px;
+}
+
+.navigation-link::before{ /*псевдоэлемент-горизонтальая черта*/
+    content: "";
+    
+    width: 1px;
+    height: 16px;
+    background-color: #003A8C;
+    margin-right: 12px;
+    
+
+}
+
+.navigation-link:last-child::after{ /*псевдоэлемент-горизонтальая черта*/
+    content: "";
+    
+    width: 1px;
+    height: 16px;
+    background-color: #003A8C;
+    margin-left: 12px;
+    
+
+}
+
+.icons-panel{ /*флекс контйенейр*/
+    display: flex;
+    align-items: center;
+}
+
+.icon-link{ /*флекс элемент котрый сам флекс контйенер*/
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.header-icon{
+    fill: #002766;
+}
+
+.header-icon:hover{
+    fill: #ffffff;
+}
+
+.icon-link:last-child::before{ /*псевдоэлемент, синяя вертикальная черта*/
+    content: "";
+    width: 1px;
+    height: 16px;
+    background-color: #003A8C;
+    margin-right: 12px;
+}
