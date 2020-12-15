@@ -12,6 +12,11 @@ developer.mozilla.org/ru — сайт веб-документации*/
 
 body{
     font-family: sans-serif;
+    background-color: #f5f5f5;
+}
+
+a{
+    text-decoration: none;
 }
 
 .header{
@@ -143,4 +148,137 @@ body{
     height: 16px;
     background-color: #003A8C;
     margin-right: 12px;
+}
+
+.container{
+    max-width:1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.menu-sidebar{
+    max-width: 192px;
+    margin-right: 12px;
+}
+
+.menu-sidebar .user{
+    padding-left: 10px;
+}
+
+.menu-sidebar .user-avatar{
+    width: 24px;
+    height: 24px;
+    
+}
+
+
+.menu-sidebar .user-name{
+    color: #262626;
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.nav-group{
+    display: flex;
+    flex-direction: column; /*главная ось направлена сверху вниз*/
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 24px;/*если ва нава будут стоять рядом, то бует схлопывание вертикальных оступов*/
+}
+
+.nav-link{/*a*/
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color:  #595959;
+    font-weight: normal;
+}
+
+.nav-link.active{/*актвиный элемет*/
+    background-color: #fff;
+    color: #262626;
+}
+
+.nav-icon{
+    margin-right: 8px;
+}
+
+.nav-title{
+    color: #262626;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.main-feed{
+    max-width: 588px;
+    margin-top: 18px;
+}
+
+.create-post{
+    width: 100%; /*ширина ктакая же как и у родителч*/
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    overflow: hidden/*все что не влезает скрываем*/;
+}
+
+.create-post-header{
+    background-color: #f5f5f5;
+    padding: 9px 16px;
+}
+
+.create-post-title{
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #595959;
+    
+}
+
+.create-post-body{
+    display: flex;
+    align-items:center;
+    padding: 16px;
+    padding-bottom: 24px;
+}
+
+.create-post-footer{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 16px;
+    padding-top: 0;
+}
+
+.create-post-footer::before{/*псевдоэелмент горизон черта*/
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #e8e8e8;
+    margin-bottom: 16px;
+}
+
+.tag{/*button*/
+    background: #F5F5F5;
+    border-radius: 48px;
+    border: none;
+    padding-top: 9px;
+    padding-left: 24px;
+    padding-right: 12px;
+    padding-bottom: 9px;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+.tag-icon{/*svg*/
+    margin-right: 8px;
 }
