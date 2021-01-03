@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<!--жму atz+Z чтобы здесь не было гор прокрутки, когда текст не увемается-->
+<!--жму atz+Z чтобы здесь не было гор прокрутки, когда текст не умещается-->
 
 <body>
     <header class="header">
@@ -22,7 +22,7 @@
         </div> 
 
         <div class="navigation">
-            <div class="user"><!--флек контенйр-->
+            <div class="user"><!--флекc контенйр-->
                 <img class="user-avatar" src="img/avatar.svg" width="32" height="32" alt="avatar" >
                 <span class="user-name">Mateusz</span>
             </div>
@@ -32,13 +32,7 @@
                 <a href="" class="navigation-link">Create</a>
             </nav>
 
-            <div class="icons-panel">
-                <a href="#" class="icon-link">
-                    <svg class="header-icon" width="24" height="24">
-                        <use xlink:href="img/icons.svg#PhotoVideo"></use>
-                    </svg>
-                </a>
-
+            <div class="icons-panel"> <!-- для спрайтов использует https://svgsprit.es/-->
                 <a href="#" class="icon-link">
                     <svg class="header-icon" width="24" height="24">
                         <use xlink:href="img/icons.svg#user-add"></use>
@@ -47,14 +41,19 @@
 
                 <a href="#" class="icon-link">
                     <svg class="header-icon" width="24" height="24">
-                        <path d="M19.125 18H18.5625V10.0312C18.5625 6.72422 16.118 3.99141 12.9375 3.53672V2.625C12.9375 2.10703 12.518 1.6875 12 1.6875C11.482 1.6875 11.0625 2.10703 11.0625 2.625V3.53672C7.88203 3.99141 5.4375 6.72422 5.4375 10.0312V18H4.875C4.46016 18 4.125 18.3352 4.125 18.75V19.5C4.125 19.6031 4.20937 19.6875 4.3125 19.6875H9.375C9.375 21.1359 10.5516 22.3125 12 22.3125C13.4484 22.3125 14.625 21.1359 14.625 19.6875H19.6875C19.7906 19.6875 19.875 19.6031 19.875 19.5V18.75C19.875 18.3352 19.5398 18 19.125 18ZM12 20.8125C11.3789 20.8125 10.875 20.3086 10.875 19.6875H13.125C13.125 20.3086 12.6211 20.8125 12 20.8125ZM7.125 18V10.0312C7.125 8.72813 7.63125 7.50469 8.55234 6.58359C9.47344 5.6625 10.6969 5.15625 12 5.15625C13.3031 5.15625 14.5266 5.6625 15.4477 6.58359C16.3687 7.50469 16.875 8.72813 16.875 10.0312V18H7.125Z" />
+                        <use xlink:href="img/icons.svg#message-icon"></use>
+                    </svg>
+                </a>
+
+                <a href="#" class="icon-link">
+                    <svg class="header-icon" width="24" height="24">
+                        <use xlink:href="img/icons.svg#bell"></use>
                     </svg>       
                 </a>
 
                 <a href="#" class="icon-link">
                     <svg class="header-icon" width="24" height="24">
-                        <path d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5ZM12 20.7188C7.18594 20.7188 3.28125 16.8141 3.28125 12C3.28125 7.18594 7.18594 3.28125 12 3.28125C16.8141 3.28125 20.7188 7.18594 20.7188 12C20.7188 16.8141 16.8141 20.7188 12 20.7188Z" />
-                        <path d="M10.875 7.875C10.875 8.17337 10.9935 8.45952 11.2045 8.6705C11.4155 8.88147 11.7016 9 12 9C12.2984 9 12.5845 8.88147 12.7955 8.6705C13.0065 8.45952 13.125 8.17337 13.125 7.875C13.125 7.57663 13.0065 7.29048 12.7955 7.0795C12.5845 6.86853 12.2984 6.75 12 6.75C11.7016 6.75 11.4155 6.86853 11.2045 7.0795C10.9935 7.29048 10.875 7.57663 10.875 7.875ZM12.5625 10.5H11.4375C11.3344 10.5 11.25 10.5844 11.25 10.6875V17.0625C11.25 17.1656 11.3344 17.25 11.4375 17.25H12.5625C12.6656 17.25 12.75 17.1656 12.75 17.0625V10.6875C12.75 10.5844 12.6656 10.5 12.5625 10.5Z" />
+                        <use xlink:href="img/icons.svg#info-circle"></use>
                     </svg>      
                 </a>
             </div>   
@@ -173,7 +172,7 @@
             </nav>
         </div><!--.menu-sidebar -->
 
-        <div class="main-feed"><!--лена новостей-->
+        <div class="main-feed"><!--лента новостей-->
             <div class="create-post"><!-- набираем .header+.body+.footer-->
                 <div class="create-post-header">
                     <h4 class="create-post-title">Create post</h4>   
@@ -186,7 +185,7 @@
                     </div>  
                 </div>
                 
-                <div class="create-post-footer"><!-- напсиали button.tag*4-->
+                <div class="create-post-footer"><!-- написали button.tag*4-->
                     <button class="tag"><!--флекс контейнер-->
                         <svg class="tag-icon" width="24" height="24" >
                             <use xlink:href="img/icons.svg#PhotoVideo"></use>
@@ -338,8 +337,6 @@
                     </button>
                 </div>
             </div>
-
-            
         </div><!--main-feed-->
 
         <div class="right-sidebar">
@@ -378,7 +375,7 @@
                 </a>
 
                 <a href="" class="story-item">
-                    <div class="story-image "></div>
+                    <div class="story-image concuira"></div>
                     <div class="story-item-text">
                         <span class="story-title">Concuira</span>
                         <span class="story-text">4 hours ago</span>
@@ -386,20 +383,61 @@
                 </a>
 
                 <a href="" class="story-item">
-                    <div class="story-image "></div>
+                    <div class="story-image custom"></div>
                     <div class="story-item-text">
                         <span class="story-title">Concuira</span>
                         <span class="story-text">4 hours ago</span>
                     </div>
                 </a>
+
+                <a href="" class="story-item">
+                    <svg class="nav-icon" width="16" height="16">
+                        <use xlink:href="img/icons.svg#caret-down"></use>
+                    </svg>
+                    <span class="story-item-link">See more</span> 
+                </a>
             </div>
 
-            <div class="gift">
-
+            <div class="stories gift">
+                <a href="" class="story-item">
+                    <div class="gift-image"></div>
+                    <span class="story-text">John Doe’s birthday is today</span>
+                </a>
             </div>
 
-            <div class="fanpage">
+            <div class="stories fanpage">
+                <div class="stories-header-fanpage">
+                    <h4 class="stories-title">Your page</h4>
+                    <button class="post-header-button">
+                        <svg class="post-button-icon" width="24" height="24">
+                            <use xlink:href="img/icons.svg#ellipsis"></use>
+                        </svg>
+                    </button>   
+                </div>
 
+                <div class="story-item story-page">
+                    <div class="story-image custom"></div>
+                    <div class="story-item-text">
+                        <span class="story-title">Concuira</span>
+                        <div class="story-text story-page">
+                            <div class="story-img img-message"></div>
+                            <span class="story-text">Messages</span>
+                        </div>
+                        <div class="story-text story-page">
+                            <div class="story-img img-notification"></div>
+                            <span class="story-text">Notifications</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-footer">
+                    <button class="post-header-button post-header-button--active">Likes</button>
+                    <button class="post-header-button">Views</button>
+                    <button class="post-header-button">Posts</button>
+                </div>
+                <div class="story-footer-count">
+                    <p class="story-footer-count-posts">262</p>
+                    <p class="story-footer-count-likes"><span>5</span> likes this week</p>
+                </div>
             </div>
         </div>
 
